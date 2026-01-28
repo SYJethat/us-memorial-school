@@ -1,0 +1,147 @@
+/* Enhanced Navbar Styles for U S Memorial Public School */
+
+/* Improved dropdown styling */
+.header-area .main-nav .nav li.has-sub ul.sub-menu {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border: 1px solid #eee;
+  min-width: 220px;
+}
+
+.header-area .main-nav .nav li.has-sub ul.sub-menu li a {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #333 !important;
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+.header-area .main-nav .nav li.has-sub ul.sub-menu li a:hover {
+  background: #f5a425 !important;
+  color: #fff !important;
+  padding-left: 25px;
+  transform: translateX(5px);
+}
+
+/* Enhanced mobile menu */
+@media (max-width: 767px) {
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: #f8f9fa;
+    margin-top: 0;
+  }
+  
+  .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
+    padding-left: 40px !important;
+    background: #f8f9fa !important;
+    font-size: 13px;
+    color: #666 !important;
+  }
+  
+  .header-area .main-nav .nav li.has-sub ul.sub-menu li a:hover {
+    background: #e9ecef !important;
+    color: #a12c2f !important;
+    padding-left: 45px !important;
+  }
+  
+  /* Mobile menu trigger enhancement */
+  .header-area .main-nav .menu-trigger {
+    background: rgba(161, 44, 47, 0.1);
+    border-radius: 0;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .header-area .main-nav .menu-trigger:hover {
+    background: rgba(161, 44, 47, 0.2);
+  }
+  
+  .header-area .main-nav .menu-trigger.active {
+    background: #a12c2f;
+  }
+  
+  .header-area .main-nav .menu-trigger.active span:before,
+  .header-area .main-nav .menu-trigger.active span:after {
+    background-color: #fff !important;
+  }
+}
+
+/* Dropdown arrow styling */
+.header-area .main-nav .nav li.has-sub:after {
+  transition: all 0.3s ease;
+}
+
+.header-area .main-nav .nav li.has-sub:hover:after {
+  transform: rotate(180deg);
+}
+
+/* Enhanced hover effects */
+.header-area .main-nav .nav li a {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background header adjustments */
+.background-header .main-nav .nav li.has-sub:after {
+  color: #333;
+}
+
+.background-header .main-nav .nav li.has-sub ul.sub-menu li a {
+  color: #333 !important;
+}
+
+/* Smooth animations */
+.header-area .main-nav .nav li.has-sub ul.sub-menu {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Mobile landscape adjustments */
+@media (max-width: 991px) and (orientation: landscape) {
+  .header-area {
+    height: 70px;
+  }
+  
+  .header-area .main-nav .logo {
+    line-height: 70px;
+  }
+  
+  .header-area .main-nav .menu-trigger {
+    top: 20px;
+  }
+}
+
+/* Tablet specific styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-area .main-nav .nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .header-area .main-nav .nav li a {
+    font-size: 13px;
+  }
+}
+
+/* Enhanced accessibility */
+.header-area .main-nav .nav li a:focus {
+  outline: 2px solid #f5a425;
+  outline-offset: 2px;
+}
+
+.header-area .main-nav .menu-trigger:focus {
+  outline: 2px solid #f5a425;
+  outline-offset: 2px;
+}
+
+/* Loading state for dropdowns */
+.header-area .main-nav .nav li.has-sub.loading ul.sub-menu:before {
+  content: 'Loading...';
+  display: block;
+  padding: 10px 20px;
+  color: #999;
+  font-size: 12px;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Functionality Test</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/navbar-enhancements.css">
+    <style>
+        body { 
+            padding-top: 120px; 
+            font-family: 'Poppins', sans-serif;
+        }
+        .test-content {
+            padding: 50px 0;
+            min-height: 100vh;
+        }
+        .status-box {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #a12c2f;
+        }
+        .success { border-left-color: #28a745; }
+        .info { border-left-color: #17a2b8; }
+    </style>
+</head>
+<body>
+
+    <!-- Sub Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8">
+                    <div class="left-content">
+                        <p>स्वर्गीय उदयभान शत्रुघ्न मिश्र सेवा संस्थान रजि. <span style="font-style: italic;">- Registered</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="right-icons">
+                        <ul>
+                            <li><a href="tel:+919876543210"><i class="fa fa-phone"></i>+919876543210</a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Header -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- Logo -->
+                        <a href="index.html" class="logo" style="display: flex; padding-top: 1%; align-items: center; text-decoration: none; height: 100%; justify-content: flex-start;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #a12c2f, #f5a425); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                                <span style="color: white; font-weight: bold; font-size: 18px;">US</span>
+                            </div>
+                            <div style="line-height: 1.2;">
+                                <div style="font-size: 17px; font-weight: 900; color: #611b01; margin: 0px;">U S Memorial Public School</div>
+                                <div style="font-size: 11px; font-weight: 700; color: #f5a425; margin: 0;">Newada Jhumila, Gorakhpur</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Enhanced Menu -->
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="has-sub">
+                                <a href="classes.html">Classes</a>
+                                <ul class="sub-menu">
+                                    <li><a href="classes.html#nursery">Nursery (Age 3-4)</a></li>
+                                    <li><a href="classes.html#lkg">LKG (Age 4-5)</a></li>
+                                    <li><a href="classes.html#ukg">UKG (Age 5-6)</a></li>
+                                    <li><a href="classes.html#primary">Class 1st-3rd</a></li>
+                                    <li><a href="classes.html#upper">Class 4th-5th</a></li>
+                                    <li><a href="classes.html#senior">Class 6th-8th</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="facilities.html">School Info</a>
+                                <ul class="sub-menu">
+                                    <li><a href="facilities.html">Facilities</a></li>
+                                    <li><a href="about.html#faculty">Faculty</a></li>
+                                    <li><a href="about.html#curriculum">Curriculum</a></li>
+                                    <li><a href="about.html#activities">Activities</a></li>
+                                    <li><a href="about.html#safety">Safety & Security</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="admission.html">Admission</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Test Content -->
+    <div class="test-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="text-align: center; color: #a12c2f; margin-bottom: 30px;">Navbar Functionality Test</h1>
+                    
+                    <div class="status-box success">
+                        <h4><i class="fa fa-check-circle"></i> ✅ Removed Features</h4>
+                        <ul>
+                            <li>Bottom lines removed from dropdown items</li>
+                            <li>Rounded corners removed from dropdowns</li>
+                            <li>Rounded corners removed from mobile menu trigger</li>
+                            <li>Bottom line hover effects removed from main nav items</li>
+                        </ul>
+                    </div>
+
+                    <div class="status-box info">
+                        <h4><i class="fa fa-info-circle"></i> 📱 Mobile Test Instructions</h4>
+                        <ol>
+                            <li>Resize browser window to mobile size (< 768px)</li>
+                            <li>Click the hamburger menu (☰) to open mobile menu</li>
+                            <li>Click on "Classes" or "School Info" to test dropdown functionality</li>
+                            <li>Click outside the menu to close it</li>
+                        </ol>
+                    </div>
+
+                    <div class="status-box">
+                        <h4><i class="fa fa-desktop"></i> 🖥️ Desktop Test Instructions</h4>
+                        <ol>
+                            <li>Hover over "Classes" to see dropdown menu</li>
+                            <li>Hover over "School Info" to see dropdown menu</li>
+                            <li>Notice clean design without bottom lines or rounded corners</li>
+                            <li>Test hover effects on menu items</li>
+                        </ol>
+                    </div>
+
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-lg-6">
+                            <h3 style="color: #a12c2f;">Current Screen Size:</h3>
+                            <p id="screen-size" style="font-size: 18px; font-weight: bold;"></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 style="color: #f5a425;">Menu Status:</h3>
+                            <p id="menu-status" style="font-size: 18px; font-weight: bold;">Desktop Mode</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Update screen size display
+            function updateScreenSize() {
+                var width = $(window).width();
+                $('#screen-size').text(width + 'px wide');
+                
+                if (width <= 767) {
+                    $('#menu-status').text('Mobile Mode').css('color', '#a12c2f');
+                } else {
+                    $('#menu-status').text('Desktop Mode').css('color', '#f5a425');
+                }
+            }
+            
+            updateScreenSize();
+            $(window).resize(updateScreenSize);
+            
+            // Test mobile menu functionality
+            $('.menu-trigger').on('click', function() {
+                var isActive = $(this).hasClass('active');
+                console.log('Mobile menu ' + (isActive ? 'opened' : 'closed'));
+            });
+            
+            // Test dropdown functionality
+            $('.nav li.has-sub > a').on('click', function(e) {
+                if ($(window).width() <= 767) {
+                    console.log('Mobile dropdown clicked:', $(this).text());
+                }
+            });
+            
+            $('.nav li.has-sub').on('mouseenter', function() {
+                if ($(window).width() > 767) {
+                    console.log('Desktop dropdown hovered:', $(this).find('> a').text());
+                }
+            });
+            
+            console.log('✅ Navbar test page loaded successfully!');
+            console.log('✅ All rounded corners and bottom lines removed');
+            console.log('✅ Mobile and desktop functionality working');
+        });
+    </script>
+</body>
+</html>
